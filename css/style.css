@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 50px;
+}
+
+.icono {
+    margin-right: 20px;
+    color: #ff7f00;
+    font-size: 1.5em;
+}
+
+header nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.1em;
+    justify-content: flex-end;
+}
+
+header nav a:hover {
+    color: #ff7f00;
+}
+
+#inicio {
+    padding-top: 120px;
+    background-image: url('fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 120px 20px 0 20px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    color: #ff7f00;
+}
+
+.hero p {
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background-color: #ff7f00;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.hero button:hover {
+    background-color: #cc6600;
+}
+
+#galeria {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#galeria h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.carousel-container {
+    margin: 0 auto;
+    padding: 0;
+    width: 80%;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.slick-prev, .slick-next {
+    color: #fff;
+    font-size: 2em;
+}
+
+.slick-prev:hover, .slick-next:hover {
+    color: #ff7f00;
+}
+
+#beneficios {
+    background-color: #1c1c1c;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#beneficios h2 {
+    margin-bottom: 40px;
+    font-size: 2.3em;
+    color: #ffffff;
+}
+
+.beneficios-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 50px;
+}
+
+.beneficio-box {
+    background-color: #fff;
+    color: #333; 
+    padding: 15px;
+    width: 30%;
+    margin: 0 20px 30px 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.1em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.beneficio-box:hover {
+    transform: translateY(-5px); 
+}
+
+@media screen and (max-width: 768px) {
+    .beneficio-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+#testimonios {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #1c1c1c;
+}
+
+#testimonios h2 {
+    margin-bottom: 40px;
+    font-size: 2.3em;
+    color: #ffffff;
+}
+
+.testimonios-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.testimonio {
+    color: #ffffff;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    position: relative;
+    border-left: 2px solid #ccc;
+}
+
+.testimonio:first-child {
+    border-left: none;
+}
+
+.testimonio blockquote {
+    font-style: italic;
+    margin-top: 20px;
+    font-size: 1em;
+}
+
+.perfil {
+    margin-bottom: 15px;
+}
+
+.perfil img {
+    width: 80px; 
+    height: 80px;
+    border-radius: 50%; 
+    margin-bottom: 10px;
+}
+
+.perfil p {
+    font-weight: bold;
+    color: #ff7f00;
+}
+
+
+@media screen and (max-width: 768px) {
+    .testimonio {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .testimonios-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonio {
+        border-left: none;
+    }
+}
+
+#precios {
+    background-color: #1c1c1c;
+    text-align: center;
+    border-radius: 8px;
+}
+
+#precios h2 {
+    margin-bottom: 40px;
+    font-size: 2.3em;
+    color: #ffffff;
+}
+
+table {
+    width: 80%;
+    margin: 40px auto 0;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 15px;
+    border: 1px solid #444;
+    text-align: center;
+}
+
+table th {
+    background-color: #333;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+table td {
+    font-size: 1.1em;
+    color: #fff;
+    background-color: #222;
+}
+
+ul {
+    margin-top: 40px;
+    padding-left: 0;
+    list-style: none;
+    text-align: left;
+}
+
+ul li {
+    margin: 15px 0; 
+    font-size: 16px;
+    color: #fff;
+}
+
+#faq {
+    background-color: #1c1c1c;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#faq h2 {
+    color: #ffffff;
+    font-size: 2.3em;
+    margin-bottom: 40px;
+}
+
+.faq-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.faq-item {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin: 0 10px 20px 0;
+    border-radius: 8px;
+    width: 33%; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faq-item h3 {
+    color: #ff7f00;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 1em;
+    text-align: left;
+}
+
+#contacto {
+    background-color: #1c1c1c;
+    padding: 0px 20px;
+    text-align: center;
+}
+
+#contacto h2{
+    color: #ffffff;
+    font-size: 2.3em;
+    margin-bottom: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input, form textarea {
+    width: 50%;
+    height: 50px;
+    margin: 10px 0 20px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #ff7f00;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+    height: 42px;
+}
+
+form button:hover {
+    background-color: #cc6600;
+}
+
+footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer .social-media a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer .social-media a:hover {
+    color: #ff7f00;
+}
+
+@media screen and (max-width: 768px) {
+    #galeria h2 {
+        font-size: 1.5em;
+    }
+
+    .carousel-container {
+        width: 90%;
+    }
+
+    .carousel img {
+        max-width: 100%;
+    }
+
+    form input, form textarea {
+        width: 80%;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    table th, table td {
+        font-size: 1em;
+        padding: 10px;
+    }
+}
+
